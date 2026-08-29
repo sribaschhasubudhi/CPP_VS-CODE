@@ -7,6 +7,6 @@ Executables/
 # Ignore macOS system metadata
 .DS_Store
 
-# (Optional) Ignore local editor settings
-.vscode/*
-!.vscode/tasks.json
+# Ignore local editor settings
+# Ignore entire VS Code settings folder
+.vscode/
