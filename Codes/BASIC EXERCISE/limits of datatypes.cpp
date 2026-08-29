@@ -22,5 +22,5 @@ int main()
     std::cout << "The maximum limit of float datatype: " << FLT_MAX << "\n";
     std::cout << "The minimum limit of float datatype: " << FLT_MIN << "\n";
     std::cout << "The maximum limit of double datatype: " << DBL_MAX << "\n";
-    std::cout << "The minimum limit of double datatype: " << DBL_MIN << "\n";
+    std::cout << "The minimum limit of double datatype: " << DBL_MIN << "\n\n";
 }
