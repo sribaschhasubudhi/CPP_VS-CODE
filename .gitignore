@@ -1,0 +1,12 @@
+# Ignore compiled binaries and debug folders
+Executables/
+*.dSYM/
+*.o
+*.out
+
+# Ignore macOS system metadata
+.DS_Store
+
+# (Optional) Ignore local editor settings
+.vscode/*
+!.vscode/tasks.json
