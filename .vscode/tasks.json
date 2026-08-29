@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "C/C++: clang++ build active file",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-fcolor-diagnostics",
+        "-fansi-escape-codes",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-std=c++20",
+        "-g",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/Executables/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "shell",
+      "label": "Build and Run Active C++ File",
+      "command": "./Executables/${fileBasenameNoExtension}",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "C/C++: clang++ build active file",
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "focus": true,
+        "panel": "shared",
+        "clear": false
+      }
+    }
+  ]
+}
