@@ -7,6 +7,7 @@ We will calculate the size of fundamental datatypes of C++ using sizeof().
 
 int main()
 {
+    int number{6};
     std::cout << "The size of char is " << sizeof(char) << " byte\n";
     std::cout << "The size of int is " << sizeof(int) << " bytes\n";
     std::cout << "The size of signed long int is " << sizeof(signed long int) << " bytes\n";
@@ -19,5 +20,7 @@ int main()
     std::cout << "\nThe size of float is " << sizeof(float) << " bytes\n";
     std::cout << "The size of double is " << sizeof(double) << " bytes\n";
     std::cout << "The size of long double is " << sizeof(long double) << " bytes\n";
+    
+    std::cout << "\nThe size of number is " << sizeof(number) << " bytes\n";
     return 0;
 }
