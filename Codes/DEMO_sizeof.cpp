@@ -1,3 +1,5 @@
+// learning to use sizeof operator
+
 #include <iostream>
 #include <climits> // Integer limits
 #include <cfloat>  // Floating-point limits
